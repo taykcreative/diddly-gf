@@ -1,0 +1,189 @@
+html {
+    font-family: sans-serif;
+    font-size: 65%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(wood.jpg);
+}
+
+/* ------------- NAVBAR ------------*/
+.top-navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+
+  .nav-left, .nav-right {
+      padding: 0 5%;
+  }
+
+  .nav-left a{
+      float: left;
+  }
+
+  .nav-right a{
+      float: right;
+  }
+  
+  .top-navbar a {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .caret-down {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  .top-navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #8ed5ff;
+    color: #000;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* MAIN */
+
+  main {
+      background-color: #fff;
+      width: 80%;
+      margin: auto;
+  }
+
+  .head{
+      display: flex;
+      width: fit-content;
+      margin: auto;
+  }
+
+  .head-image {
+      flex: left;
+  }
+
+  .head-text {
+    text-align: center;
+  }
+
+  h1 {
+      font-size: 5rem;
+  }
+
+  h2 {
+      font-size: 3rem;
+  }
+
+
+  /* SLIDESHOW */
+
+  .image-slideshow {
+      height: 200px;
+  }
+
+  /* FORM */
+
+  .index-form {
+      margin: auto;
+      font-size: 1.6rem;
+      width: 100%;
+      background-color: #ddd;
+      padding: 2% 0;
+  }
+
+  .newsletter {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 2%;
+  }
+
+  form {
+      display: block;
+      width: fit-content;
+      margin: auto;
+  }
+
+  #email {
+      font-size: 1.4rem;
+      padding: 5px;
+      width: 300px;
+      border-radius: 5px;
+      margin: 10px auto;
+  }
+
+  .subscribe {
+      display: block;
+      margin: auto;
+      font-size: 1.4rem;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+      background-color: #333;
+      opacity: 90%;
+      color: #fff;
+      text-align: center;
+      margin-top: 2%;
+      padding-bottom: 2%;
+      font-size: 1.2rem;
+  }
+
+  .social-links img{
+      margin: 1% 10px;
+      border-radius: 7px;
+  }
+
+  .footer-text a{
+        color:#8ed5ff;
+        text-decoration: none;
+  }

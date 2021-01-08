@@ -9,7 +9,51 @@ body {
     background-image: url(wood.jpg);
 }
 
-/* ------------- NAVBAR ------------*/
+
+/*-------------- GLOBAL ------------*/
+
+main {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5rem;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+  /* FOOTER */
+
+  footer {
+    background-color: #333;
+    opacity: 90%;
+    color: #fff;
+    text-align: center;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.2rem;
+}
+
+.social-links img{
+    margin: 1% 10px;
+    border-radius: 7px;
+}
+
+.footer-text a{
+      color:#8ed5ff;
+      text-decoration: none;
+}
+
+
+/* NAVBAR */
 .top-navbar {
     overflow: hidden;
     background-color: #333;
@@ -91,13 +135,7 @@ body {
   }
 
 
-  /* MAIN */
-
-  main {
-      background-color: #fff;
-      width: 80%;
-      margin: auto;
-  }
+  /* INDEX PAGE */
 
   .head{
       display: flex;
@@ -113,22 +151,19 @@ body {
     text-align: center;
   }
 
-  h1 {
-      font-size: 5rem;
-  }
-
-  h2 {
-      font-size: 3rem;
-  }
-
 
   /* SLIDESHOW */
 
   .image-slideshow {
-      height: 200px;
+      width: 100%;
   }
 
-  /* FORM */
+  .image-slideshow img {
+      width: 100%;
+      margin: 50px auto 0 auto;
+  }
+
+  /* SUBSCRIPTION FORM */
 
   .index-form {
       margin: auto;
@@ -145,57 +180,28 @@ body {
       padding-bottom: 2%;
   }
 
-  form {
+  .index-form form {
       display: block;
       width: fit-content;
       margin: auto;
   }
 
   #email {
-      font-size: 1.4rem;
+      text-align: center;
+      font-size: 1.6rem;
       padding: 5px;
       width: 300px;
       border-radius: 5px;
-      margin: 10px auto;
+      margin: 1% auto;
   }
 
   .subscribe {
       display: block;
       margin: auto;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
   }
-
-
-  /* FOOTER */
-
-  footer {
-      background-color: #333;
-      opacity: 90%;
-      color: #fff;
-      text-align: center;
-      margin-top: 2%;
-      padding-bottom: 2%;
-      font-size: 1.2rem;
-  }
-
-  .social-links img{
-      margin: 1% 10px;
-      border-radius: 7px;
-  }
-
-  .footer-text a{
-        color:#8ed5ff;
-        text-decoration: none;
-  }
-
-
-
 
 /*---------------- CONTACT PAGAE -------------*/
-
-h1 {
-    margin-top: 0;
-}
 
 .center {
     text-align: center;
@@ -204,7 +210,6 @@ h1 {
 .contact-left {
     width: 40%;
     float: left;
-    font-size: 1.6rem;
     margin-left: 10%;
 }
 
@@ -222,13 +227,13 @@ h1 {
 }
 
 .form label{ 
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
     float: left;
 }
 
 #name, #email-addy{
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
     font-size: 1.6rem;
     float: right;
@@ -267,11 +272,58 @@ h1 {
 
 .caption{
     text-align: center;
-    font-size: 1.6rem;
     margin: 20px auto 0;
 }
 
 h2 {
     padding: 5% 0;
     clear: both;
+}
+
+
+/* ABOUT PAGE */
+
+.about-outer {
+    width: 70%;
+    background-image: url('plaid.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5% auto;
+    padding: 30px 30px;  /* I am going for a plaid border look with .about-inner being a white div on top*/
+    border: 1px solid magenta;
+    box-shadow: 0 0 5px #333;
+}
+
+.about-inner {
+    background-color: #fff;
+    margin: auto;
+    width: fit-content;
+    padding: 15px;
+    border: 1px solid #333;
+}
+
+.sig {
+    /* Change font to a fancy cursive font for signature.*/
+}
+
+
+
+
+/* ------------ REVIEWS PAGE ------------ */
+
+
+.review-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.reviewcard {
+    margin: 50px auto;
+    box-shadow: 0 0 3px #333;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.reviewer p{
+    text-align: right;
 }

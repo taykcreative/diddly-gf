@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Delicious Gluten-Free bread, cake, and pizza crust pre-measured mixes.">
     <link rel="stylesheet" href="style.css">
-    <title>Contact | Diddly GF</title>
+    <title>Reviews | Diddly GF</title>
 </head>
 <body>
     <header>
@@ -13,15 +13,15 @@
             <div class="nav-left">
                 <div class="home"><a href="index.html">Home</a></div>
                 <div class="dropdown nav-projects">
-                    <button class="dropbtn">About<span class="caret-down">&#9660;</span>
+                    <button class="dropbtn"><b>About</b><span class="caret-down">&#9660;</span>
                     </button>
                     <div class="dropdown-content">
                         <a href="about.html">Gramma Dixie's Story</a>
-                        <a href="reviews.html">Product Reviews</a>
+                        <a href="reviews.html"><b>Product Reviews</b></a>
                         <a href="nutritionfacts.html">Nutrition Facts</a>
                     </div>
                 </div>
-                <div class="home"><a href="contact.html"><b>Contact</b></a></div>
+                <div class="home"><a href="contact.html">Contact</a></div>
             </div>
             <div class="nav-right">
                 <div class="online-order"><a href="#">Order Online</a></div>
@@ -31,31 +31,33 @@
     </header>
 
     <main>
-        <h1 class="center">Contact us!</h1>
-        <div class="contact-left">
-            <div class="contact-text">
-                Email - <a href="mailto:inquiries@diddlyglutenfreemix.com">inquiries@diddlyglutenfreemix.com</a><br>
-                Tel - <a href="tel:+2095433995">1(209) 543 - 3995</a><br><br>
-                Mailing - P.O.Box 6825<br>
-                                        Vacaville, CA 95696</span>
+        <h1 class="center">Product Reviews</h1>
+
+        <div class="review-wrapper">
+            <div class="reviewcard review1">
+                <div class="review"><p>"I baked and brought my roll to a local deli. The sandwich was unbelievably good! The staff was actually caught off guard by how soft and fluffy the roll was. Highly recommend!"</p></div>
+                <div class="reviewer"><p>- Rachelle, California</p></div>
             </div>
-            <div class="contact-form">
-                <form action="#" method="post" class="form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="First &amp; Last" required><br>
-                    <label for="email-addy">Email:</label>
-                    <input type="email" id="email-addy" placeholder="your@email.com" required><br>
-                    <label for="message">Message:</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="What would you like to say?" required></textarea><br>
-                    <input class="send-btn" type="submit" value="SEND">
+            <div class="reviewcard review2">
+                <div class="review"><p>"This was delicious! By far the best gluten-free bread I have ever tried."</p></div>
+                <div class="reviewer"><p>- Tyler, California</p></div>
+            </div>
+            <h2 class="center">Would you like to submit your own review?</h2>
+            <div class="reviewcard review-form">
+                <form action="POST">
+                    <label for="text-review">Your Review: </label><br>
+                    <textarea name="text-review" id="text-review" cols="30" rows="10" required></textarea><br>
+                    <label for="reviewer-name">Name: </label>
+                    <input type="text" id="reviewer-name" required><br>
+                    <label for="reviewer-location">Location: </label>
+                    <input type="text" id="reviewer-location" required><br>
+                    <label for="order-num">Order Number: </label>
+                    <input type="text" id="order-num" required><br>
                 </form>
             </div>
         </div>
-        <div class="contact-right">
-            <img src="cake.jpg" alt="cake">
-            <div class="caption">Try our Gluten-Free cake! It's delicious!</div>
-        </div>
-        <h2 class="center">We want to hear from you!</h2>
+        
+
     </main>
 
     <footer>
